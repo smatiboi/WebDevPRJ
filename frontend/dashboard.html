@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard · FLMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body data-page="dashboard">
+  <div class="app-shell">
+    <aside class="sidebar"><div class="brand"><span class="brand-mark">F</span><span>FLMS</span></div><nav id="nav" class="nav"></nav></aside>
+    <main class="main">
+      <header class="topbar"><div><h1>Admin Dashboard</h1><p class="subtitle">Library health, recent circulation, and overdue visibility.</p></div><span id="whoami" class="pill"></span></header>
+      <div id="message" class="message hidden"></div>
+      <section id="stats" class="grid stats section"></section>
+      <section class="card table-wrap"><table><thead><tr><th>User</th><th>Book</th><th>Borrowed</th><th>Due</th><th>Status</th></tr></thead><tbody id="recentLoans"></tbody></table></section>
+    </main>
+  </div>
+  <script src="/assets/js/app.js?v=owner6"></script>
+</body>
+</html>

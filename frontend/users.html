@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Management · FLMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body data-page="users">
+  <div class="app-shell">
+    <aside class="sidebar"><div class="brand"><span class="brand-mark">F</span><span>FLMS</span></div><nav id="nav" class="nav"></nav></aside>
+    <main class="main">
+      <header class="topbar"><div><h1>User Management</h1><p class="subtitle">Admins can change roles and deactivate accounts.</p></div><span id="whoami" class="pill"></span></header>
+      <div id="message" class="message hidden"></div>
+      <section class="card section" style="padding:18px">
+        <form id="createUserForm" class="grid cols-3">
+          <label>Name<input name="name" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Password<input name="password" type="password" minlength="8" required></label>
+          <label>Role<select id="createRole" name="role" required></select></label>
+          <label>Department<select name="departmentId" data-departments></select></label>
+          <label>Status
+            <select name="status">
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </label>
+          <button type="submit">Create User</button>
+        </form>
+      </section>
+      <section class="card table-wrap"><table><thead><tr><th>User</th><th>Role</th><th>Department</th><th>Status</th><th>Action</th></tr></thead><tbody id="usersTable"></tbody></table></section>
+    </main>
+  </div>
+  <script src="/assets/js/app.js?v=owner6"></script>
+</body>
+</html>

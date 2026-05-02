@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile · FLMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body data-page="profile">
+  <div class="app-shell">
+    <aside class="sidebar"><div class="brand"><span class="brand-mark">F</span><span>FLMS</span></div><nav id="nav" class="nav"></nav></aside>
+    <main class="main">
+      <header class="topbar"><div><h1>Profile</h1><p class="subtitle">Keep your department and display name current.</p></div><span id="whoami" class="pill"></span></header>
+      <div id="message" class="message hidden"></div>
+      <section class="card" style="padding:18px;max-width:680px">
+        <form id="profileForm" class="grid">
+          <label>Name<input id="profileName" name="name" required></label>
+          <label>Email<input id="profileEmail" disabled></label>
+          <label>Role<input id="profileRole" disabled></label>
+          <label>Department<select id="profileDepartment" name="departmentId" data-departments required></select></label>
+          <button type="submit">Save Profile</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="/assets/js/app.js?v=owner6"></script>
+</body>
+</html>
