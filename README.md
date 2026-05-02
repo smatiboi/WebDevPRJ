@@ -125,3 +125,5 @@ Borrowing, returning, and renewing books are handled with MySQL transactions in 
 
 - API map: [docs/api.md](docs/api.md)
 - Testing notes: [docs/testing-strategy.md](docs/testing-strategy.md)
+
+!!NOTE!!: Some crewmates faced issues with their PCs or and githubs, those 2 crewmates are Noureddine (kusabimaru360) and Younes (dxkm919-glitch), faced with such problem, their work is uploaded by the other 2 of the same section, Adim (backend contributer responsible for uploading Younes files) and Abdelkahar (frontend contributer responsible for uploading Noureddine files)
