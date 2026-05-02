@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register · FLMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body data-page="register">
+  <main class="auth-layout">
+    <section class="auth-panel">
+      <div class="brand"><span class="brand-mark">F</span><span>FLMS</span></div>
+      <h1>Create account</h1>
+      <p class="subtitle">New accounts start as students. Owner/admin users can change roles after approval.</p>
+      <div id="message" class="message hidden"></div>
+      <form id="registerForm" class="grid">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Password<input name="password" type="password" minlength="8" required autocomplete="new-password"></label>
+        <label>Department<select name="departmentId" data-departments required></select></label>
+        <button type="submit">Register</button>
+      </form>
+      <p><a href="/login.html">Already have an account?</a></p>
+    </section>
+    <section class="auth-art"><h1>Books, borrowers, and staff in one tidy system.</h1></section>
+  </main>
+  <script src="/assets/js/app.js?v=owner6"></script>
+</body>
+</html>

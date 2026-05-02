@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login · FLMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body data-page="login">
+  <main class="auth-layout">
+    <section class="auth-panel">
+      <div class="brand"><span class="brand-mark">F</span><span>FLMS</span></div>
+      <h1>Welcome back</h1>
+      <p class="subtitle">Sign in to manage loans, browse the faculty catalog, and keep library work moving.</p>
+      <div id="message" class="message hidden"></div>
+      <form id="loginForm" class="grid">
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Password<input name="password" type="password" required autocomplete="current-password"></label>
+        <button type="submit">Login</button>
+      </form>
+      <p><a href="/register.html">Create account</a> · <a href="/forgot-password.html">Reset password</a></p>
+      <p class="subtitle">Seed password for demo accounts: <strong>Password123!</strong></p>
+    </section>
+    <section class="auth-art"><h1>A calmer way to run the faculty library.</h1></section>
+  </main>
+  <script src="/assets/js/app.js?v=owner6"></script>
+</body>
+</html>

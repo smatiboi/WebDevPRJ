@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog · FLMS</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body data-page="catalog">
+  <div class="app-shell">
+    <aside class="sidebar"><div class="brand"><span class="brand-mark">F</span><span>FLMS</span></div><nav id="nav" class="nav"></nav></aside>
+    <main class="main">
+      <header class="topbar"><div><h1>Catalog</h1><p class="subtitle">Search books by title, author, ISBN, category, format, availability, and year.</p></div><span id="whoami" class="pill"></span></header>
+      <div id="message" class="message hidden"></div>
+      <form id="filters" class="card toolbar">
+        <input name="search" placeholder="Search title, author, ISBN">
+        <select name="categoryId" data-categories></select>
+        <select name="format"><option value="">All formats</option><option value="physical">Physical</option><option value="digital">Digital</option></select>
+        <select name="availability"><option value="">All availability</option><option value="available">Available</option></select>
+        <input name="yearFrom" type="number" placeholder="From year">
+        <button type="submit">Search</button>
+        <button id="resetFilters" class="secondary" type="button">Reset</button>
+      </form>
+      <section id="books" class="grid books"></section>
+      <div class="pager"><button id="prevPage" class="secondary">Previous</button><span id="pageInfo"></span><button id="nextPage" class="secondary">Next</button></div>
+    </main>
+  </div>
+  <script src="/assets/js/app.js?v=owner6"></script>
+</body>
+</html>
